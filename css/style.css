@@ -56,8 +56,7 @@ body {
 }
 
 .hero {
-  background-image: url("../assets/background.png"); /* Replace with your own image path */
-  background-size: contain;
+  background-size: initial;
   background-position: center;
   height: 80vh;
   position: relative;
@@ -66,7 +65,18 @@ body {
   width: 100%;
   background-color: black;
 }
-
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/background7.png");
+  background-size: cover;
+  filter: brightness(30%);
+  z-index: 0;
+}
 .hero-overlay {
   width: 100%;
   height: 100%;
@@ -89,7 +99,7 @@ body {
 
 .hero-text p {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .hero-buttons {
   margin-top: 2rem;
@@ -112,13 +122,7 @@ body {
 }
 
 .btn-outline {
-  background-color: transparent;
   border: 2px solid #4c8bf5;
-  color: #4c8bf5;
-}
-
-.btn-outline:hover {
-  background-color: #4c8bf5;
   color: white;
 }
 
@@ -481,7 +485,9 @@ body {
     flex-direction: column;
     gap: 3rem;
   }
-
+  .contact-form-box {
+    width: 100%;
+  }
   .form-row {
     flex-direction: column;
   }
@@ -509,7 +515,9 @@ body {
   .contact-form button {
     width: 100%;
   }
-
+  .contact-form-box {
+    width: 100%;
+  }
   .hero h1 {
     font-size: 2rem;
   }
@@ -552,4 +560,10 @@ body {
   .nav-links li {
     margin: 0.5rem 0;
   }
+  .contact-form-box {
+    width: 100%;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
 }

@@ -4,7 +4,7 @@ const projects = [
     img: "assets/apple.png",
     description:
       "A responsive clone of Apple’s homepage built with HTML, CSS, and Bootstrap",
-    link: "https://dag-abate-apple-clone.netlify.app",
+    link: "https://eloquent-seahorse-9da382.netlify.app/",
   },
 
   {
